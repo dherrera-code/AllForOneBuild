@@ -1,6 +1,5 @@
-// alert("Plase work!");
-const displayHello = document.getElementById("displayHelloUser");
 
+const displayHello = document.getElementById("displayHelloUser");
 const inputName = document.getElementById("inputName")
 const enterBtn = document.getElementById("enterBtn")
 const resetBtn = document.getElementById("resetBtn");
