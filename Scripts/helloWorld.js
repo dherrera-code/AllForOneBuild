@@ -10,9 +10,32 @@ const getHelloData = async (name) => {
     const response = await fetch(`https://allforoneapidh-h2cygwchdcbbcsce.westus3-01.azurewebsites.net/api/helloworld/hello/${name}`);
     const data = await response.text();
     console.log(data)
-    return data;
+    // return data;
+    displayHello.textContent = data;
 }
 
+
+inputName.addEventListener("keydown", (event) => {
+    console.log(event);
+    if(event.key === "Enter"){
+        if(inputName.value === "")
+        {
+            displayHello.textContent = "Input a valid name!"
+        }
+        else{
+            getHelloData(inputName.value);
+        }
+    }
+})
+enterBtn.addEventListener("click", ()=> {
+    if(inputName.value === "")
+        {
+            displayHello.textContent = "Input a valid name!"
+        }
+        else{
+            getHelloData(inputName.value);
+        }
+})
 
 //add btn event listeners!
 resetBtn.addEventListener("click", () => {
