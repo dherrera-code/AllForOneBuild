@@ -13,27 +13,52 @@
 <body>
 
   <header class="py-8 px-4 mx-auto max-w-7xl text-center lg:py-16">
-    <h1 class="mb-4 text-4xl font-bold tracking-tight leading-none md:text-5xl lg:text-6xl">Hello World!</h1>
-
+    <h1 class="mb-4 text-5xl font-bold tracking-tight leading-none md:text-5xl lg:text-6xl">Hello World!</h1>
   </header>
-    
+  <!-- Input Section -->
+  <section class="flex justify-center">
+    <div class="max-w-6xl p-6 card-color rounded-lg shadow-md ">
+      <a href="#">
+        <h5 class="lg:text-2xl xl:text-4xl font-normal tracking-tight">This program prompts the user to enter their
+          name and greets the user!</h5>
+      </a>
+      <p class="my-12 lg:text-2xl xl:text-4xl font-normal text-center">Please enter your name!</p>
+      <div class="flex">
 
-    
+        <input type="text" class="bg-white ps-4" placeholder="Enter a Name">
+        <button href="#" style="margin-left: auto;"
+          class=" w-35 md:w-40 lg:w-50 px-5 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+          Enter
+      </button>
+      </div>
+    </div>
 
-<div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-    <a href="#">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-    </a>
-    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-    <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-        Read more
-        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-        </svg>
-    </a>
-</div>
+  </section>
 
+  <!-- Response block! -->
+  <section class="flex justify-center my-9">
+    <div class=" lg:min-w-xl xl:min-w-4xl py-6 px-20 card-color rounded-lg shadow-md ">
+      <h2 class="text-[40px] text-center mb-6">Response!</h2>
+      <p id="displayHelloUser" class="text-[30px] text-center">Hello, User!</p>
+    </div>
 
+  </section>
 
-      <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+<!-- Buttons to reset response or Back to index -->
+  <section>
+    <div class="container max-w-6xl p-7">
+      <div class="flex justify-between">
+      <a href="#" style=""
+          class="w-30 md:w-40 px-5 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+          Reset
+      </a>
+      <a href="../index.html" style="margin-left: auto;"
+          class="sm:w-40 md:w-50 px-5 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+          Back to Menu
+      </a>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </body>
