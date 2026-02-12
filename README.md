@@ -8,4 +8,5 @@
     Responsiveness Completed
         home page
         restaurant picker
-        
+    Functionality Needs to Be Completed:
+        MadLib
