@@ -14,7 +14,3 @@ body{
 .btn:hover{
     background-color: #155A94;
 }
-.container{
-    margin: 0 auto;
-    display: block;
-}
