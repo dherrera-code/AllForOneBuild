@@ -6,12 +6,28 @@ const displayResponse = document.getElementById("displayResponse");
 const resetBtn = document.getElementById("resetBtn");
 
 const getData = async (number) => {
-    const response = await fetch(apiurl + `/api/${number}`);
+    const response = await fetch(apiurl + `/api/OddOrEven/Number/${number}`);
     const data = response.text();
     return data;
 
 }
 enterBtn.addEventListener("click", async () => {
-    let text = await getData(inputNumber.value);
-    displayResponse.textContent = text;
+    if (inputNumber.value === "")
+        displayResponse.textContent = "Input a valid number!";
+    else {
+        let output = await getData(inputNumber.value);
+        displayResponse.textContent = output;
+    }
+})
+inputNumber.addEventListener("keypress", async (event) => {
+
+    if (event.key === "Enter") {
+
+        if (inputNumber.value === "")
+            displayResponse.textContent = "Input a valid number!";
+        else {
+            let output = await getData(inputNumber.value);
+            displayResponse.textContent = output;
+        }
+    }
 })
