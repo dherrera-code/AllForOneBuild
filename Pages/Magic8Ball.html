@@ -13,7 +13,7 @@
 <body>
 
   <header class="py-8 px-4 mx-auto max-w-7xl text-center lg:py-16">
-    <h1 class="mb-4 text-5xl font-bold tracking-tight leading-none md:text-5xl lg:text-6xl">Magic 8 Ball</h1>
+    <h1 class="mb-4 text-4xl font-bold tracking-tight leading-none md:text-5xl lg:text-6xl">Magic 8 Ball</h1>
   </header>
   <!-- Input Section -->
   <section class="flex justify-center">
@@ -21,10 +21,10 @@
       <a href="#">
         <h5 class="lg:text-2xl xl:text-4xl font-normal tracking-tight">I am the mystical magic 8 ball, I can answer any yes or no question with extreme precision and accuracy! Now state your question!</h5>
       </a>
-      <p class="my-12 lg:text-2xl xl:text-4xl font-normal text-center">Enter your question mortal!</p>
-      <div class="flex">
+      <p class="my-6 lg:my-12 lg:text-2xl xl:text-4xl font-normal text-center">Enter your question mortal!</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 place-items-center">
         <input id="inputQuestion" class="bg-white ps-4" placeholder="Enter your question">
-        <button id="enterBtn" style="margin-left: auto;"
+        <button id="enterBtn"
           class=" w-35 md:w-40 lg:w-50 px-5 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
           Enter
       </button>
@@ -36,10 +36,9 @@
   <!-- Response block! -->
   <section class="flex justify-center my-9">
     <div class=" lg:min-w-xl xl:min-w-4xl py-6 px-20 card-color rounded-lg shadow-md ">
-      <h2 class="text-[40px] text-center mb-6">Response!</h2>
-      <p id="displayResponse" class="text-[30px] text-center"></p>
+      <h2 class="text-[40px] text-center mb-3">Response!</h2>
+      <p id="displayResponse" class="text-xl sm:text-[30px] text-center"></p>
     </div>
-
   </section>
 
 <!-- Buttons to reset response or Back to index -->

@@ -13,19 +13,19 @@
 <body>
 
     <header class="py-8 px-4 mx-auto max-w-7xl text-center lg:py-16">
-        <h1 class="mb-4 text-5xl font-bold tracking-tight leading-none md:text-5xl lg:text-6xl">Reverse It (Numbers Only)</h1>
+        <h1 class="mb-4 text-4xl font-bold tracking-tight leading-none md:text-5xl lg:text-6xl">Reverse It (Numbers Only)</h1>
     </header>
     <!-- Input Section -->
     <section class="flex justify-center">
         <div class="max-w-6xl p-6 card-color rounded-lg shadow-md ">
             <h5 class="lg:text-2xl xl:text-4xl font-normal tracking-tight">This program takes a long number and reverses the order of the number! Please enter a sequence of numbers below!</h5>
-            <p class="my-12 lg:text-2xl xl:text-4xl font-normal text-center">Enter a sequence of numbers!</p>
-            <div class="grid grid-cols-2 place-items-center">
+            <p class="my-6 lg:my-12 lg:text-2xl xl:text-4xl font-normal text-center">Enter a sequence of numbers!</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 place-items-center">
                 <div class="">
                     <input id="inputNumber"  type="number" class="bg-white ps-4" placeholder="Enter a word!" required>
                 </div>
-                <div class="row-start-1 col-start-2 mt-3">
-                    <button id="enterBtn" style="margin-left: auto;"
+                <div class="sm:row-start-1 sm:col-start-2 mt-3">
+                    <button id="enterBtn"
                         class="row-start-2 w-35 md:w-40 lg:w-50 px-5 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                         Enter
                     </button>
@@ -37,7 +37,7 @@
 
     <!-- Response block! -->
     <section class="flex justify-center my-9">
-        <div class=" lg:min-w-xl xl:min-w-4xl py-6 px-20 card-color rounded-lg shadow-md ">
+        <div class="lg:min-w-xl xl:min-w-4xl py-6 px-8 sm:px-20 card-color rounded-lg shadow-md ">
             <h2 class="text-[40px] text-center mb-6">Response!</h2>
             <p id="displayResponse" class="text-[30px] text-center"></p>
         </div>

@@ -14,3 +14,7 @@ body{
 .btn:hover{
     background-color: #155A94;
 }
+input{
+    padding: 8px;
+    padding-inline-start: 1rem;
+}
