@@ -8,7 +8,7 @@ const displaySum = document.getElementById("displaySum");
 const resetBtn = document.getElementById("resetBtn");
 
 const getSum = async (num1, num2) => {
-    const response = await fetch(apiurl + `/api/addingtwonumber/adding/${num1}/${num2}`);
+    const response = await fetch(apiurl + `/api/addingtwonumber/${num1}/${num2}`);
     const data = await response.text();
     return data;
 }

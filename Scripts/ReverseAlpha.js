@@ -6,7 +6,7 @@ const resetBtn = document.getElementById("resetBtn")
 const displayResponse = document.getElementById("displayResponse")
 
 const getData = async (string) => {
- const response = await fetch(apiurl + `/api/reverseitalpha/reverseitalpha/${string}`);
+ const response = await fetch(apiurl + `/api/reverseitalpha/${string}`);
  const data = await response.text();
  return data;
 }

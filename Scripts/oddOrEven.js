@@ -6,7 +6,7 @@ const displayResponse = document.getElementById("displayResponse");
 const resetBtn = document.getElementById("resetBtn");
 
 const getData = async (number) => {
-    const response = await fetch(apiurl + `/api/OddOrEven/Number/${number}`);
+    const response = await fetch(apiurl + `/api/OddOrEven/${number}`);
     const data = response.text();
     return data;
 
