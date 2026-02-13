@@ -1,22 +1,16 @@
 # Daniel Herrera
 
-# All For One Front-end website
+# All For One - Build
+
+## 2/13/2026
+
+## Description:
+    This project uses an API I created for the mini challenges to add functionality towards my website 
+    for the user to interact! It is fully functional with js front-end and an API endpoint back-end!
 
 ## Notes
     Need to adjust all the font in the first home page! 
-    
-    Responsiveness Completed
-        home page
 
-        restaurant picker
-        hell0 world
-        adding numbers
-        greaterOrLess
-        Madlib
-        magic 8ball
-        oddOrEven
-        asking q
-        
-
-    
     Update footer btns for better responsiveness for tablet (middle)
+
+## Peer Review () :
