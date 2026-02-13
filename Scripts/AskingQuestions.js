@@ -25,5 +25,5 @@ enterBtn.addEventListener("click", async () => {
 resetBtn.addEventListener("click", () => {
     displayResponse.textContent = "";
     inputName.value = "";
-    inputTime.value = "";
+    inputTime.value = "06:30";
 })
