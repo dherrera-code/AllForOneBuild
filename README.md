@@ -11,4 +11,4 @@
 ## Notes
     Link to azure build: https://white-island-0ac32031e.1.azurestaticapps.net/index.html
 
-## Peer Review () :
+## Peer Review () : Vanessa Acuna - I loved the way you use cards. All games worked for me and so did the Azure link. Great Job!
