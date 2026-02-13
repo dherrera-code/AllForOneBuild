@@ -17,13 +17,19 @@ inputString.addEventListener("keypress", async (event) => {
             let reversed = await getData(inputString.value)
             displayResponse.textContent = reversed;
         }
+        else{
+            displayResponse.value = "Error: Please Input a sequence of characters!";
+        }
     }
 })
 
 enterBtn.addEventListener("click", async () => {
-    if(inputString.value !== ""){
+        if(inputString.value !== ""){
             let reversed = await getData(inputString.value)
             displayResponse.textContent = reversed;
+        }
+        else{
+            displayResponse.value = "Error: Please Input a sequence of characters!";
         }
 })
 

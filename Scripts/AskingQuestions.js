@@ -13,9 +13,14 @@ const getData = async (name, time) => {
 }
 
 enterBtn.addEventListener("click", async () => {
-    console.log("btn is clicked")
-    let response = await getData(inputName.value, inputTime.value);
-    displayResponse.textContent = response;
+    if(inputName.value == "" || inputTime.value == "")
+    {
+        displayResponse.textContent = "Error: Please input a name and time!"
+    }
+    else {
+        let response = await getData(inputName.value, inputTime.value);
+        displayResponse.textContent = response;
+    }
 })
 resetBtn.addEventListener("click", () => {
     displayResponse.textContent = "";

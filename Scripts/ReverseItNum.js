@@ -17,6 +17,9 @@ inputNumber.addEventListener("keypress", async (event) => {
             let reversed = await getData(inputNumber.value)
             displayResponse.textContent = reversed;
         }
+        else{
+            displayResponse.value = "Error: Please Input a sequence of numbers!";
+        }
     }
 })
 
@@ -24,6 +27,9 @@ enterBtn.addEventListener("click", async () => {
     if(inputNumber.value !== ""){
             let reversed = await getData(inputNumber.value)
             displayResponse.textContent = reversed;
+        }
+        else{
+            displayResponse.value = "Error: Please Input a sequence of numbers!";
         }
 })
 

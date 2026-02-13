@@ -14,8 +14,14 @@ const getSum = async (num1, num2) => {
 }
 
 enterBtn.addEventListener("click", async () => {
-    let sum = await getSum(inputNum1.value, inputNum2.value);  
-    displaySum.textContent = sum;
+    if(inputNum1.value == "" || inputNum2.value == "")
+    {
+        displaySum.textContent = "Error: Enter two numbers to proceed"
+    }
+    else{
+        let sum = await getSum(inputNum1.value, inputNum2.value);  
+        displaySum.textContent = sum;
+    }
 })
 resetBtn.addEventListener("click", () => {
     inputNum1.value = "";

@@ -13,7 +13,7 @@ const getData = async (number) => {
 }
 enterBtn.addEventListener("click", async () => {
     if (inputNumber.value === "")
-        displayResponse.textContent = "Input a valid number!";
+        displayResponse.textContent = "Error: Input a valid number!";
     else {
         let output = await getData(inputNumber.value);
         displayResponse.textContent = output;

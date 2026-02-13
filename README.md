@@ -9,8 +9,6 @@
     for the user to interact! It is fully functional with js front-end and an API endpoint back-end!
 
 ## Notes
-    Need to adjust all the font in the first home page! 
-
-    Update footer btns for better responsiveness for tablet (middle)
+    Link to azure build: https://white-island-0ac32031e.1.azurestaticapps.net/index.html
 
 ## Peer Review () :
